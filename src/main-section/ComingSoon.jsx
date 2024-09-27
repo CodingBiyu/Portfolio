@@ -1,5 +1,5 @@
 function ComingSoon() {
-  return <div>Coming Soon</div>;
+  return <div className="comingSoon">Working on it. . .</div>;
 }
 
 export default ComingSoon;

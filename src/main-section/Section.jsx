@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import Card from "../Card";
 // import ComingSoon from "./ComingSoon";
 import ExperienceCard from "./ExperienceCard";
@@ -10,6 +12,10 @@ import css from "../assets/images tools/css-3.png";
 import js from "../assets/images tools/js.png";
 import react from "../assets/images tools/science.png";
 import canva from "../assets/images tools/palette.webp";
+import efruit from "../assets/images project/efruit.webp";
+import buyMePizza from "../assets/images project/img-buymepizza.webp";
+import scoreboard from "../assets/images project/scoreboard.png";
+import tictactoe from "../assets/images project/Tictactoe.png";
 
 function Section() {
   return (
@@ -29,23 +35,20 @@ function Section() {
           <Numbers experience="+16" expDesc="YEARS OF EDUCATION " />
         </div>
         <div className="pattern-box">
-          <a href="./ComingSoon.jsx">
+          <Link to="/coming-soon">
             <div className="pattern">
-              <i className="ri-stack-line top-i "></i>
+              <i className="ri-stack-line top-i"></i>
               <p>DYNAMIC ANIMATION, MOTION DESIGN</p>
-
               <i className="ri-arrow-right-circle-line bottom-i"></i>
             </div>
-          </a>
-          <a href="./ComingSoon.jsx">
+          </Link>
+          <Link to="/coming-soon">
             <div className="pattern1">
-              <i className="text-black ri-brush-4-line top-i "></i>
+              <i className="text-black ri-brush-4-line top-i"></i>
               <p>FRAMER, FIGMA, WORDPRESS, REACTJS</p>
-              <a>
-                <i className="ri-arrow-right-circle-line bottom-i "></i>
-              </a>
+              <i className="ri-arrow-right-circle-line bottom-i"></i>
             </div>
-          </a>
+          </Link>
         </div>
 
         <div className="experience" id="experience">
@@ -70,26 +73,26 @@ function Section() {
           <Heading head1="RECENT " head2="PROJECTS" />
           <ProjectCard
             Heading="Fruit Website"
-            Image="/src/assets/images project/efruit.webp"
+            Image={efruit}
             Description="A website showcasing different fruits, designed to be responsive on all devices."
             Link="https://biyasitedomainstartshere.on.drv.tw/www.efruit.com/Home/"
           />
           <ProjectCard
             Heading="Buy Me Pizza"
-            Image="/src/assets/images project/img-buymepizza.webp"
+            Image={buyMePizza}
             Description="An interactive fun game. Send it to your friends and get pizza treat."
             Link="https://codingbiyu.github.io/Buymepizza/"
           />
           <ProjectCard
             Heading="Scoreboard"
-            Image="/src/assets/images project/scoreboard.webp"
+            Image={scoreboard}
             Description="A score board designed to be responsive and visually appealing."
             Link="https://biyasitedomainstartshere.on.drv.tw/www.efruit.com/www.scoreboard.com/score.html"
           />
           <ProjectCard
             Heading="TicTacToe"
-            Image="/src/assets/images project/Tictactoe.webp"
-            Description="A classic game of Tic-Tac-Toe. Play when boredom strikes"
+            Image={tictactoe}
+            Description="A multiplayer game of Tic-Tac-Toe. Play when boredom strikes"
             Link="https://biyasitedomainstartshere.on.drv.tw/www.efruit.com/www.Tictactoe.com/tictac.html"
           />
         </div>

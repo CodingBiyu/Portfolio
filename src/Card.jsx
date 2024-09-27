@@ -1,7 +1,9 @@
+import pfp from "./assets/pfpremove.png";
+
 function Card() {
   return (
     <div className="card">
-      <img src="/src/assets/pfpremove.png" />
+      <img src={pfp} />
       <h1 className="name">ABIHA SAMI</h1>
       <p>A Frontend Developer who has crafted countless user experiences.</p>
 
