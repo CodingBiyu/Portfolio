@@ -15,7 +15,7 @@ import canva from "../assets/images tools/palette.webp";
 import efruit from "../assets/images project/efruit.webp";
 import buyMePizza from "../assets/images project/img-buymepizza.webp";
 import scoreboard from "../assets/images project/scoreboard.png";
-import tictactoe from "../assets/images project/Tictactoe.png";
+import tictactoe from "../assets/images project/tictactoe.png";
 
 function Section() {
   return (
