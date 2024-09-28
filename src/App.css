@@ -304,6 +304,7 @@ ul li:hover p {
 .allTools {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding-bottom: 100px;
 }
 .tool-card {
   display: flex;
@@ -314,7 +315,7 @@ ul li:hover p {
 
 .bgImg {
   background-color: #ffffff;
-  width: 12%;
+  width: 15%;
   padding: 4px;
   border-radius: 5px;
 }
@@ -444,8 +445,5 @@ ul li:hover p {
   }
   .comingSoon {
     font-size: 40px;
-  }
-  .bgImg {
-  width: 20%;
   }
 }
