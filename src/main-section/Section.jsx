@@ -15,7 +15,7 @@ import canva from "../assets/images tools/palette.webp";
 import efruit from "../assets/images project/efruit.webp";
 import buyMePizza from "../assets/images project/img-buymepizza.webp";
 import scoreboard from "../assets/images project/scoreboard.png";
-import tictactoe from "../assets/images project/tictactoe.png";
+import tictactoe from "../assets/images project/Tictactoe.png";
 
 function Section() {
   return (
@@ -34,7 +34,10 @@ function Section() {
           <Numbers experience="+10" expDesc="PROJECTS COMPLETED" />
           <Numbers experience="+16" expDesc="YEARS OF EDUCATION " />
         </div>
-        <div className="pattern-box">
+        <div
+          className="pattern-box"
+          data-aos="slide-up"
+          data-aos-duration="1000">
           <Link to="/coming-soon">
             <div className="pattern">
               <i className="ri-stack-line top-i"></i>
@@ -42,7 +45,7 @@ function Section() {
               <i className="ri-arrow-right-circle-line bottom-i"></i>
             </div>
           </Link>
-          <Link to="/coming-soon">
+          <Link to="/coming-soon" data-aos="slide-up" data-aos-duration="1000">
             <div className="pattern1">
               <i className="text-black ri-brush-4-line top-i"></i>
               <p>FRAMER, FIGMA, WORDPRESS, REACTJS</p>
